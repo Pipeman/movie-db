@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shoudld render the component correctly 1`] = `
+<FormContainer>
+  <form
+    id="movie-search"
+  >
+    <MovieInput
+      handleChange={[Function]}
+      value=""
+    >
+      <div
+        className="movie-input-copntainer"
+      >
+        <label
+          htmlFor="movie-name"
+        >
+          Movie to search
+        </label>
+        <input
+          className="movie-input"
+          id="movie-name"
+          onChange={[Function]}
+          placeholder=""
+          type="text"
+        />
+      </div>
+    </MovieInput>
+  </form>
+</FormContainer>
+`;
+
+exports[`should handle the change in the input 1`] = `
+<FormContainer>
+  <form
+    id="movie-search"
+  >
+    <MovieInput
+      handleChange={[Function]}
+      value="cane"
+    >
+      <div
+        className="movie-input-copntainer"
+      >
+        <label
+          htmlFor="movie-name"
+        >
+          Movie to search
+        </label>
+        <input
+          className="movie-input"
+          id="movie-name"
+          onChange={[Function]}
+          placeholder="cane"
+          type="text"
+        />
+      </div>
+    </MovieInput>
+  </form>
+</FormContainer>
+`;

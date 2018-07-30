@@ -15,8 +15,10 @@ class FormContainer extends Component {
 
   setMovieTitleHandler(event) {
     this.setState({
-      [event.target.id]: event.target.value,
+      "searchedMovie": event.target.value,
     });
+
+    console.log(event.target.value)
   }
 
   render() {
