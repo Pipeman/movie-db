@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "webpack --mode=production",
+    "build": "webpack --config webpack.prod.js",
     "dev": "webpack --mode=development",
-    "start": "webpack-dev-server --mode=development --open"
+    "start": "webpack-dev-server --open --config webpack.dev.js"
   },
   "author": "TozzY",
   "license": "ISC",
@@ -17,25 +17,30 @@
     "babel-loader": "7.1.5",
     "babel-preset-env": "1.7.0",
     "babel-preset-react": "6.24.1",
+    "css-loader": "1.0.0",
     "enzyme": "3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "enzyme-to-json": "^3.3.4",
+    "enzyme-adapter-react-16": "1.1.1",
+    "enzyme-to-json": "3.3.4",
     "html-loader": "0.5.5",
     "html-webpack-plugin": "3.2.0",
     "jest": "23.4.2",
+    "jest-fetch-mock": "1.6.5",
     "react-test-renderer": "16.4.1",
     "webpack": "4.16.3",
     "webpack-cli": "3.1.0",
-    "webpack-dev-server": "3.1.5"
+    "webpack-dev-server": "3.1.5",
+    "webpack-merge": "4.1.3"
   },
   "dependencies": {
+    "babel-polyfill": "6.26.0",
     "react": "16.4.1",
     "react-dom": "16.4.1"
   },
   "jest": {
     "testURL": "http://localhost/",
     "setupTestFrameworkScriptFile": "./src/setupTests.js",
-    "snapshotSerializers": [ "enzyme-to-json/serializer" ]
-
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }

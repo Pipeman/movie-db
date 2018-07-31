@@ -1,8 +1,8 @@
-const path = require('path');
+const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development",
+  entry: ["babel-polyfill", "./src"],
   module: {
     rules: [
       {
@@ -22,13 +22,12 @@ module.exports = {
             loader: "html-loader"
           }
         ]
+      },
+      {
+        test: /\.css$/,
+        use: [ "style-loader", "css-loader" ]
       }
     ]
-  },
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: false,
-    port: 9000
   },
   plugins: [
     new HtmlWebPackPlugin({
