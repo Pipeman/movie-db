@@ -7,7 +7,6 @@ it("shoudld render the component correctly", () => {
   const testHandler = () => {};
   const wrapper = shallow(
     <MovieInput
-      value="testValue"
       handleChange={testHandler}
     ></MovieInput>
   );
@@ -18,10 +17,9 @@ it("shoudld call the handler on change", () => {
   const testHandler = jest.fn();
   const wrapper = shallow(
     <MovieInput
-      value=""
       handleChange={testHandler}
     ></MovieInput>
   );
   wrapper.find("input").simulate("change");
-  expect(testHandler.mock.calls.length).toBe(1);
+  expect(testHandler).toHaveBeenCalledTimes(1);
 });

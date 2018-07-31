@@ -1,3 +1,5 @@
+jest.mock("../../services/movieDB.service");
+
 import React from "react";
 import { mount } from "enzyme";
 import toJson from "enzyme-to-json";
@@ -22,6 +24,5 @@ it("should handle the change in the input", () => {
       value,
     }
   });
-  expect(wrapper.find("input").props().placeholder).toBe(value);
   expect(toJson(wrapper)).toMatchSnapshot();
 })

@@ -4,16 +4,11 @@ exports[`shoudld render the component correctly 1`] = `
 <div
   className="movie-input-copntainer"
 >
-  <label
-    htmlFor="movie-name"
-  >
-    Movie to search
-  </label>
   <input
     className="movie-input"
     id="movie-name"
     onChange={[Function]}
-    placeholder="testValue"
+    placeholder="Movie to search"
     type="text"
   />
 </div>

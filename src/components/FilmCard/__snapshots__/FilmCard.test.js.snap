@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the component correctly 1`] = `
+<FilmCard
+  info={
+    Object {
+      "poster_path": "fight-club-poster.jpg",
+      "title": "Fight Club",
+      "vote_average": 10,
+      "vote_count": 1000,
+    }
+  }
+>
+  <div
+    className="movie-card-copntainer"
+  >
+    <header>
+      <h1>
+        Fight Club
+      </h1>
+      <span>
+        10
+         over 
+        1000
+         votes
+      </span>
+    </header>
+    <img
+      src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/fight-club-poster.jpg"
+    />
+  </div>
+</FilmCard>
+`;

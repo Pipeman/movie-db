@@ -2,26 +2,18 @@
 
 exports[`shoudld render the component correctly 1`] = `
 <FormContainer>
-  <form
-    id="movie-search"
-  >
+  <form>
     <MovieInput
       handleChange={[Function]}
-      value=""
     >
       <div
         className="movie-input-copntainer"
       >
-        <label
-          htmlFor="movie-name"
-        >
-          Movie to search
-        </label>
         <input
           className="movie-input"
           id="movie-name"
           onChange={[Function]}
-          placeholder=""
+          placeholder="Movie to search"
           type="text"
         />
       </div>
@@ -32,26 +24,18 @@ exports[`shoudld render the component correctly 1`] = `
 
 exports[`should handle the change in the input 1`] = `
 <FormContainer>
-  <form
-    id="movie-search"
-  >
+  <form>
     <MovieInput
       handleChange={[Function]}
-      value="cane"
     >
       <div
         className="movie-input-copntainer"
       >
-        <label
-          htmlFor="movie-name"
-        >
-          Movie to search
-        </label>
         <input
           className="movie-input"
           id="movie-name"
           onChange={[Function]}
-          placeholder="cane"
+          placeholder="Movie to search"
           type="text"
         />
       </div>
