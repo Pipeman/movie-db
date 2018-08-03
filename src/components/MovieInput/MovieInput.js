@@ -1,10 +1,11 @@
 import React from "react";
+import styles from "./MovieInput.css"
 
-const MovieInput = ({ value, handleChange }) => (
-  <div className="movie-input-copntainer">
+const MovieInput = ({ handleChange }) => (
+  <div className={styles["movie-input-container"]}>
     <input
       id="movie-name"
-      className="movie-input"
+      className={styles["movie-input"]}
       type="text"
       placeholder="Movie to search"
       onChange={handleChange}

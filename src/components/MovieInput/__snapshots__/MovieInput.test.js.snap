@@ -1,11 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`shoudld render the component correctly 1`] = `
-<div
-  className="movie-input-copntainer"
->
+<div>
   <input
-    className="movie-input"
     id="movie-name"
     onChange={[Function]}
     placeholder="Movie to search"

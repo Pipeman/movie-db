@@ -11,9 +11,10 @@ exports[`should render the component correctly 1`] = `
     }
   }
 >
-  <div
-    className="movie-card-copntainer"
-  >
+  <div>
+    <img
+      src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/fight-club-poster.jpg"
+    />
     <header>
       <h1>
         Fight Club
@@ -25,9 +26,6 @@ exports[`should render the component correctly 1`] = `
          votes
       </span>
     </header>
-    <img
-      src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/fight-club-poster.jpg"
-    />
   </div>
 </FilmCard>
 `;

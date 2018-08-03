@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import MovieInput from "../MovieInput/MovieInput";
 import FilmCard from "../FilmCard/FilmCard";
 import { searchMovie } from "../../services/movieDB.service";
+import styles from "./FormContainer.css";
 
 class FormContainer extends Component {
 
@@ -35,13 +36,13 @@ class FormContainer extends Component {
 
   render() {
     return (
-      <form>
+      <form className={styles["form-container"]}>
         <MovieInput
           handleChange={this.setSearchedMovieHandler}
         />
-        {
-          this.state.foundMovies.map(film => <FilmCard info={film} key={film.id} />)
-        }
+        <div className={styles["cards-container"]}>
+          { this.state.foundMovies.map(film => <FilmCard info={film} key={film.id} />) }
+        </div>
       </form>
     );
   }

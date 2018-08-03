@@ -1,0 +1,7 @@
+.movie-input {
+  -webkit-appearance: none;
+  border: none;
+  border-bottom: .1rem blue solid;
+  height: 2em;
+  width: 100%;
+}

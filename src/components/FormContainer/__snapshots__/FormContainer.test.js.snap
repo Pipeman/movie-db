@@ -6,11 +6,8 @@ exports[`shoudld render the component correctly 1`] = `
     <MovieInput
       handleChange={[Function]}
     >
-      <div
-        className="movie-input-copntainer"
-      >
+      <div>
         <input
-          className="movie-input"
           id="movie-name"
           onChange={[Function]}
           placeholder="Movie to search"
@@ -18,6 +15,7 @@ exports[`shoudld render the component correctly 1`] = `
         />
       </div>
     </MovieInput>
+    <div />
   </form>
 </FormContainer>
 `;
@@ -28,11 +26,8 @@ exports[`should handle the change in the input 1`] = `
     <MovieInput
       handleChange={[Function]}
     >
-      <div
-        className="movie-input-copntainer"
-      >
+      <div>
         <input
-          className="movie-input"
           id="movie-name"
           onChange={[Function]}
           placeholder="Movie to search"
@@ -40,6 +35,7 @@ exports[`should handle the change in the input 1`] = `
         />
       </div>
     </MovieInput>
+    <div />
   </form>
 </FormContainer>
 `;

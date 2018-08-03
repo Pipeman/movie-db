@@ -1,0 +1,22 @@
+.movie-card-container {
+  text-align: center;
+}
+
+.movie-card-container h1 {
+  font-size: 24px;
+}
+
+.movie-card-container header {
+  text-align: left;
+}
+
+.poster {
+  position: relative;
+}
+
+.poster-not-available {
+  width: 185px;
+  height: 278px;
+  line-height: 278px;
+  background-color: #dbdbdb;
+}
